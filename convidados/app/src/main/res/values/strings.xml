@@ -11,4 +11,8 @@
     <string name="menu_absent">Ausentes</string>
     <string name="menu_all_guests">Todos os convidados</string>
     <string name="menu_present">Presentes</string>
+    <string name="guest_form_name">Nome</string>
+    <string name="gest_gorm_present">Presença</string>
+    <string name="gest_gorm_present_radio_buton">Presente</string>
+    <string name="gest_gorm_absent_radio_buton">Ausente</string>
 </resources>

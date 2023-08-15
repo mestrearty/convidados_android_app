@@ -4,16 +4,73 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/pink_background"
+    android:padding="16dp"
     tools:context=".GuestFormActivity">
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Olá"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/text_guest_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/guest_form_name"
+        android:textColor="@color/text_default"
+        android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        />
+        app:layout_constraintTop_toTopOf="parent" />
 
+    <EditText
+        android:id="@+id/edit_name"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/text_guest_name"
+        app:layout_constraintTop_toBottomOf="@+id/text_guest_name" />
+
+    <TextView
+        android:id="@+id/text_present"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/gest_gorm_present"
+        android:textColor="@color/text_default"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_name" />
+
+    <RadioGroup
+        android:id="@+id/radio_group_confimation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@id/text_present"
+        app:layout_constraintTop_toBottomOf="@id/text_present">
+
+        <RadioButton
+            android:id="@+id/radio_present"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gest_gorm_present_radio_buton"
+            android:textColor="@color/text_default" />
+
+        <RadioButton
+            android:id="@+id/radio_absent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gest_gorm_absent_radio_buton"
+            android:textColor="@color/text_default" />
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/button_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:text="Salvar"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@id/radio_group_confimation"
+        app:layout_constraintTop_toBottomOf="@+id/radio_group_confimation" />
 </androidx.constraintlayout.widget.ConstraintLayout>
