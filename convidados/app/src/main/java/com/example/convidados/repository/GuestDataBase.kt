@@ -4,6 +4,7 @@ import android.content.Context
 import android.database.DatabaseErrorHandler
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
+import com.example.convidados.constants.DataBaseConstants
 
 class GuestDataBase(context: Context) : SQLiteOpenHelper(context, NAME, null, VERSION) {
     companion object {
@@ -13,7 +14,12 @@ class GuestDataBase(context: Context) : SQLiteOpenHelper(context, NAME, null, VE
 
     override fun onCreate(db: SQLiteDatabase) {
         //Criação do banco
-        db.execSQL("create table Guest(id integer primary key autoincrement, name text, presence integer);")
+        db.execSQL(
+            "create table " + DataBaseConstants.GUEST.TABLE_NAME + " (" +
+                    DataBaseConstants.GUEST.COLUMNS.ID + " integer primary key autoincrement, " +
+                    DataBaseConstants.GUEST.COLUMNS.NAME + " text, " +
+                    DataBaseConstants.GUEST.COLUMNS.PRESENCE + " integer);"
+        )
     }
 
     override fun onUpgrade(db: SQLiteDatabase, oldVersion: Int, newVersion: Int) {
