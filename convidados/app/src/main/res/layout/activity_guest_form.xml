@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/pink_background"
     android:padding="16dp"
-    tools:context=".ui.guestform.GuestFormActivity">
+    tools:context=".view.GuestFormActivity">
 
     <TextView
         android:id="@+id/text_guest_name"
