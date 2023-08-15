@@ -25,7 +25,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".GuestFormActivity"
+            android:name=".ui.guestform.GuestFormActivity"
             android:exported="true"
             android:label="@string/menu_all_guests"
             android:theme="@style/Theme.Convidados.NoActionBar">

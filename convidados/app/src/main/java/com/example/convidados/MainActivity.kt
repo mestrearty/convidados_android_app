@@ -11,6 +11,7 @@ import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
 import com.example.convidados.databinding.ActivityMainBinding
+import com.example.convidados.ui.guestform.GuestFormActivity
 
 class MainActivity : AppCompatActivity() {
 
