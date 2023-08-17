@@ -30,7 +30,7 @@ class GuestRepository private constructor(context: Context) {
 
             //creating a "ContentValue" val to save on db like a object instead of make a SQL text query
             val values = ContentValues()
-            values.put(DataBaseConstants.GUEST.COLUMNS.NAME, guest.nome)
+            values.put(DataBaseConstants.GUEST.COLUMNS.NAME, guest.name)
             values.put(DataBaseConstants.GUEST.COLUMNS.PRESENCE, presence)
 
             db.insert(DataBaseConstants.GUEST.TABLE_NAME, null, values)
@@ -46,7 +46,7 @@ class GuestRepository private constructor(context: Context) {
             val presence = if (guest.presence) 1 else 0
 
             val values = ContentValues()
-            values.put(DataBaseConstants.GUEST.COLUMNS.NAME, guest.nome)
+            values.put(DataBaseConstants.GUEST.COLUMNS.NAME, guest.name)
             values.put(DataBaseConstants.GUEST.COLUMNS.PRESENCE, presence)
 
             val selection = DataBaseConstants.GUEST.COLUMNS.ID + " = ? "
