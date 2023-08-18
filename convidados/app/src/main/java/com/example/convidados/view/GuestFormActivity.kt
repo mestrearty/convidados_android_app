@@ -3,6 +3,7 @@ package com.example.convidados.view
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
 import com.example.convidados.R
 import com.example.convidados.databinding.ActivityGuestFormBinding
@@ -31,6 +32,9 @@ class GuestFormActivity : AppCompatActivity(), View.OnClickListener {
 
             val gestModel = GuestModel(0, name, presence)
             viewModel.insert(gestModel)
+            Toast.makeText(view.context,"Convidado $name criado", Toast.LENGTH_SHORT).show()
+
+            finish()
         }
     }
 }
