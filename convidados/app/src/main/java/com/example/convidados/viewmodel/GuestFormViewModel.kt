@@ -13,4 +13,8 @@ class GuestFormViewModel(application: Application) : AndroidViewModel(applicatio
     fun insert(guestModel: GuestModel) {
         repository.insert(guestModel)
     }
+
+    fun get (id: Int){
+        repository.get(id)
+    }
 }

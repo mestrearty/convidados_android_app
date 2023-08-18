@@ -6,6 +6,7 @@ import android.view.View
 import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
 import com.example.convidados.R
+import com.example.convidados.constants.DataBaseConstants
 import com.example.convidados.databinding.ActivityGuestFormBinding
 import com.example.convidados.model.GuestModel
 import com.example.convidados.viewmodel.GuestFormViewModel
@@ -23,6 +24,9 @@ class GuestFormActivity : AppCompatActivity(), View.OnClickListener {
         binding.buttonSave.setOnClickListener(this)
 
         binding.radioPresent.isChecked = true
+
+        //loading data case was called by a edit view
+        loadData()
     }
 
     override fun onClick(view: View) {
@@ -35,6 +39,14 @@ class GuestFormActivity : AppCompatActivity(), View.OnClickListener {
             Toast.makeText(view.context,"Convidado $name criado", Toast.LENGTH_SHORT).show()
 
             finish()
+        }
+    }
+
+    fun loadData(){
+    val bundle = intent.extras
+        if (bundle != null){
+            val guestId = bundle.getInt(DataBaseConstants.GUEST.ID)
+            viewModel.get(guestId)
         }
     }
 }
