@@ -10,7 +10,7 @@
 
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycler_all_guests"
+        android:id="@+id/recycler_guests"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         app:layout_constraintLeft_toLeftOf="parent"
