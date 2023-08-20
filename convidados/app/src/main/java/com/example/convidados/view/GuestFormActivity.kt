@@ -60,7 +60,7 @@ class GuestFormActivity : AppCompatActivity(), View.OnClickListener {
 
         guestFormViewModel.saveGuest.observe(this, Observer {
             if(it){
-                Toast.makeText(applicationContext, "$it", Toast.LENGTH_SHORT).show()
+                Toast.makeText(applicationContext, "Salvo com sucesso!", Toast.LENGTH_SHORT).show()
                 finish()
             }
         })
