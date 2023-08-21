@@ -5,7 +5,7 @@
 * MVVM
 * RecyclerView
 * Constraint Layout
-* Android SQ Lites
+* Android SQ Lite
 
 ## Download App
 
@@ -30,9 +30,4 @@ On hold a Guest show a confirm panel
 
 ## Prints
 
-<img src="./App Images/Sidebar Menu.jpg" width="128"/> 
-<img src="./App Images/All_Guests with toast.jpg" width="128"/> 
-<img src="./App Images/Absents.jpg" width="128"/> 
-<img src="./App Images/New_Guets.jpg" width="128"/> 
-<img src="./App Images/Presents.jpg" width="128"/> 
-<img src="./App Images/Sidebar Menu.jpg" width="128"/> 
+<img src="./App Images/Sidebar Menu.jpg" width="128"/> <img src="./App Images/All_Guests with toast.jpg" width="128"/> <img src="./App Images/Absents.jpg" width="128"/> <img src="./App Images/New_Guets.jpg" width="128"/> <img src="./App Images/Presents.jpg" width="128"/> <img src="./App Images/Sidebar Menu.jpg" width="128"/> 
